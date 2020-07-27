@@ -1,4 +1,3 @@
-// brute force
 public class Solution {
     public int maxArea(int[] height) {
         int maxarea = 0;

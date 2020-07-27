@@ -17,11 +17,9 @@ class Solution {
         while(low < high){
             if(A.charAt(low) != A.charAt(high))
                 return false;
-
             low++;
             high--;
         }
-
        return true;
     }
 
@@ -29,7 +27,7 @@ class Solution {
 
                         OR
 
-                        
+
 class Solution {
     public boolean isPalindrome(String s) {
         s = s.replaceAll("[^A-Za-z0-9]","").toLowerCase();
