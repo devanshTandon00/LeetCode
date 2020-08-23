@@ -17,7 +17,7 @@ public class Solution {
 
         int flag = 0;
         //Check for b.next handles the case where length 1
-        while(a != null && b != null && b.next != null){
+        while(b != null && b.next != null){
             a = a.next;
             b = b.next.next;
             if (a == b){
