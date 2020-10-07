@@ -10,13 +10,13 @@
  */
 var answer = function(head){
   let prev = null;
-  let curr = head;
+  let current = head;
 
-  while(curr != null) {
-          let temp = curr.next;
-          curr.next = prev;
-          prev = curr;
-          curr = temp;
+  while(current != null) {
+          let temp = current.next;
+          current.next = prev;
+          prev = current;
+          current = temp;
   }
 
   return prev;
