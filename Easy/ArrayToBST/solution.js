@@ -10,9 +10,9 @@
  * @param {number[]} nums
  * @return {TreeNode}
  */
- function helper(nums, start, end){
+function helper(nums, start, end){
     if (start > end) {
-        return null;
+      return null;
     }
 
     let middle = start + Math.floor((end - start)/2)
@@ -26,5 +26,4 @@
 var sortedArrayToBST = function(nums) {
     if(nums.length == 0) return null
     return helper(nums, 0, nums.length - 1)
-
 }
