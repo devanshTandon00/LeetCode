@@ -8,7 +8,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-var answer = function(head){
+const answer = (head) => {
   let prev = null;
   let current = head;
 

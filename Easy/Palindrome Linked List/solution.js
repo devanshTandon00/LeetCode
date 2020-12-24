@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {boolean}
  */
-const isPalindrome = function(head) {
+const isPalindrome = (head) => {
         let done = true;
         let addToStack = head;
         const stack = [];
