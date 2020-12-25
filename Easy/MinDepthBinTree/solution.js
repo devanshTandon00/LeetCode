@@ -11,23 +11,29 @@
  * @return {number}
  */
 const minDepth = function(root) {
-    if (!root) return 0;
+    if (!root){
+        console.log("entered null")
+         return 0;
+    }
 
-    console.log("first")
+    console.log("first " + root.val)
 
-    let left;
-    let right;
+    let left = minDepth(root.left);
+
+    let right = minDepth(root.right);
 
     if(root.right == null){
         console.log("here@")
-        return minDepth(root.left) + 1
+        left += 1
+        return left
     }
 
     if(root.left == null){
         console.log("here")
-        return minDepth(root.right) + 1
+        right += 1
+        return right
     }
-    console.log("second")
+    console.log("second" + root.val + " " + left + " " + right)
 
-    return Math.min(minDepth(root.left), minDepth(root.right)) + 1
+    return Math.min(left, right) + 1
 };
