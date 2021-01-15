@@ -13,6 +13,7 @@
  *     }
  * }
  */
+ //https://www.facebook.com/watch/?v=614974885806717
 class Solution {
     public boolean isValidBST(TreeNode root) {
         return validate(root, null, null);
